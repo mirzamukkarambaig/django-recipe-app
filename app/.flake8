@@ -2,6 +2,6 @@
 max-line-length = 119
 exclude =
     migrations,
-    __pychache__,
+    __pycache__,
     manage.py,
     settings.py
