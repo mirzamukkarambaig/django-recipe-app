@@ -20,9 +20,10 @@ from drf_spectacular.views import (
 
 from django.contrib import admin
 from django.urls import path
-
+from django.http import HttpResponse
 
 urlpatterns = [
+    path('', lambda request: HttpResponse('Django App')),
     path('admin/', admin.site.urls),
     path('api/schema/', SpectacularAPIView.as_view(), name='api-schema'),
     path(

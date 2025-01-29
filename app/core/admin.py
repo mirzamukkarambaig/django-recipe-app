@@ -24,7 +24,7 @@ class UserAdmin(BaseUserAdmin):
                 )
             }
         ),
-        (_('Important Dates'), {'fields': ('last_login',)}),  # Fixed typo and tuple issue
+        (_('Important Dates'), {'fields': ('last_login',)}),
     )
     readonly_fields = ['last_login']
 
